@@ -33,7 +33,7 @@ main{
 }
 .item{
     background-color: var(--White);
-    width: 240px;
+    width: 320px;
     height: 50dvh;
     display: flex;
     flex-direction: column;
