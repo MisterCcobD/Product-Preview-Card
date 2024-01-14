@@ -1,0 +1,108 @@
+:root{
+    /* PRIMARY */
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* NEUTRAL */
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--Cream);
+}
+main{
+    padding: 10% 0;
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 16px 0 0;
+}
+.item{
+    background-color: var(--White);
+    width: 320px;
+    height: 42dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.description{
+    border-radius: 0 0 16px 16px;
+}
+.description *{
+    margin: 0 5%;
+}
+h1,p{
+    color: var(--Darkgrayishblue);
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+ h2 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: black;
+}
+.f-s14{
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mainPrice{
+    color: var(--Darkcyan);
+}
+button{
+    all: unset;
+    cursor: pointer;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    width: 250px;
+    height: 40px;
+    border-radius: 16px;
+    font-weight: 700;
+    text-align: center;
+        & img{
+            margin: 0 5%;
+        }
+        &:hover{
+            background-color: hsl(158, 36%, 25%);
+            transition-duration: 500ms;
+        }
+        &:not(:hover){
+            background-color: var(--Darkcyan);
+            transition-duration: 500ms;
+        }
+}
+
+@media screen and (min-width:720px) and (orientation:landscape) {
+    /* CHECK LATER */
+    .image{
+        background-image: url(images/image-product-desktop.jpg);
+        border-radius: 16px 0 0 16px;
+    }
+    .description{
+        border-radius: 0 16px 16px 0;
+    }
+    
+}
