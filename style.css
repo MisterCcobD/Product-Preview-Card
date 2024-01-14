@@ -33,8 +33,8 @@ main{
 }
 .item{
     background-color: var(--White);
-    width: 320px;
-    height: 42dvh;
+    width: 240px;
+    height: 50dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -74,10 +74,11 @@ h1{
 }
 button{
     all: unset;
+    align-self: center;
     cursor: pointer;
     background-color: var(--Darkcyan);
     color: var(--White);
-    width: 250px;
+    width: 80%;
     height: 40px;
     border-radius: 16px;
     font-weight: 700;
