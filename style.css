@@ -34,7 +34,7 @@ main{
 .item{
     background-color: var(--White);
     width: 320px;
-    height: 50dvh;
+    height: 60dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
